@@ -18,36 +18,6 @@ LOCAL_PATH := $(call my-dir)
 ifneq ($(filter cp8675,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := ckservice
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_OWNER := qcom
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_MODULE_TAGS := optional
-LOCAL_CERTIFICATE := platform
-LOCAL_SRC_FILES := system/app/ckservice/ckservice.apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := SogouInput
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_OWNER := qcom
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_MODULE_TAGS := optional
-LOCAL_CERTIFICATE := platform
-LOCAL_SRC_FILES := system/app/SogouInput/SogouInput.apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := appstore
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_OWNER := qcom
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_MODULE_TAGS := optional
-LOCAL_CERTIFICATE := platform
-LOCAL_SRC_FILES := system/app/appstore/appstore.apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := TimeService
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_OWNER := qcom
