@@ -18,5 +18,5 @@ PRODUCT_PACKAGES += \
     libTimeService \
     libtime_genoff
 
-$(call inherit-product, vendor/coolpad/cp8675/copyfiles.mk)
+$(call inherit-product, vendor/coolpad/cp8675/vendor/copyfiles.mk)
 
