@@ -24,14 +24,14 @@ LOCAL_MODULE_OWNER := qcom
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_MODULE_TAGS := optional
 LOCAL_CERTIFICATE := platform
-LOCAL_SRC_FILES := system/app/TimeService/TimeService.apk
+LOCAL_SRC_FILES := vendor/system/app/TimeService/TimeService.apk
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libtime_genoff
 LOCAL_MODULE_OWNER := qcom
-LOCAL_SRC_FILES_64 := system/vendor/lib64/libtime_genoff.so
-LOCAL_SRC_FILES_32 := system/vendor/lib/libtime_genoff.so
+LOCAL_SRC_FILES_64 := vendor/system/vendor/lib64/libtime_genoff.so
+LOCAL_SRC_FILES_32 := vendor/system/vendor/lib/libtime_genoff.so
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
@@ -44,8 +44,8 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := libTimeService
 LOCAL_MODULE_OWNER := qcom
-LOCAL_SRC_FILES_64 := system/vendor/lib64/libTimeService.so
-LOCAL_SRC_FILES_32 := system/vendor/lib/libTimeService.so
+LOCAL_SRC_FILES_64 := vendor/system/vendor/lib64/libTimeService.so
+LOCAL_SRC_FILES_32 := vendor/system/vendor/lib/libTimeService.so
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
